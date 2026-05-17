@@ -69,7 +69,7 @@ tests/
   test_learning_path.py
 docs/
 Dockerfile
-docker-compose.yml    # includes Neo4j
+podman-compose.yml    # includes Neo4j
 ```
 
 ---
@@ -90,7 +90,7 @@ docker-compose.yml    # includes Neo4j
 ## Quick Start
 
 ```bash
-docker-compose up -d   # starts Neo4j
+podman-compose up -d   # starts Neo4j
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn src.api:app --reload --port 9009
